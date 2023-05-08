@@ -7,13 +7,15 @@ import '../main.dart';
 class Arrow extends PositionComponent with HasGameRef<MyGame> {
   Arrow(this.arrowSpeed);
   final double arrowSpeed;
+  void dispose() {
+      game.arrows--;
+      game.remove(this);
+  }
 
   @override
   void update(double dt) {
     if (x > game.size.x) {
-      game.arrows--;
-      game.remove(this);
-      return;
+      dispose();
     }
     x += dt * arrowSpeed;
 
