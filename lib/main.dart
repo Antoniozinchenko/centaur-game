@@ -5,6 +5,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
 import 'actors/player.dart';
+import 'managers/zombie_respawn.dart';
 
 void main() {
   runApp(GameWidget(game: MyGame()));
@@ -23,6 +24,7 @@ class MyGame extends FlameGame
   @override
   Future<void> onLoad() async {
     await add(Player());
+    await add(ZombieRespawn());
     await super.onLoad();
   }
   int arrows = 0;
