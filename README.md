@@ -5,7 +5,7 @@
 [Створюємо гру Частина 1: Головний персонаж гри | Flutter tutorial українською](https://youtu.be/8pNqWEgyy58)
 
 
-[Створюємо гру Частина 2: Генерація ворогів та події колізії | Flutter tutorial українською](https://youtu.be/8pNqWEgyy58)
+[Створюємо гру Частина 2: Генерація ворогів та події колізії | Flutter tutorial українською](https://youtu.be/eV-WT2C7qDE)
 
 ---
 
